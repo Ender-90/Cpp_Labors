@@ -1,3 +1,6 @@
+#ifndef _lab_first_H_
+#define _lab_first_H_
+
 #include <iostream>
 
 // Exercise no. 1
@@ -20,3 +23,5 @@ void circleSquareArea();
 // and convert to output in days, hours, minutes and seconds.
 
 void convertSeconds();
+
+#endif // _lab_first_H_

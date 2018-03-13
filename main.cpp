@@ -1,5 +1,6 @@
 #include <iostream>
 #include "lab_first.hpp"
+#include "lab_second.hpp"
 
 using namespace std;
 
