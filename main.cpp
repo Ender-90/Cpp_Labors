@@ -7,6 +7,11 @@ using namespace std;
 int main()
 {
     cout << "Hello world!" << endl;
+
+    userNameWelcome();
+    averageOfSprints();
+    sumBetween();
+
     triangleArea();
     circleSquareArea();
     convertSeconds();
