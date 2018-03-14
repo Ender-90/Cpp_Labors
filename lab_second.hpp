@@ -39,4 +39,15 @@ void investCheck();
 
 void starDisplay();
 
+// Exercise no. 6
+//
+// Write an tax calculate app for NaturLand kingdom, where have currency named Twarp.
+// They have following tax thresholds:
+// first 5 000 twarps - 0%;
+// next 10 000 twarps - 10%;
+// next 20 000 twarps - 15%;
+// rest above 35 000 twarps - 20%;
+
+void taxForNaturLand();
+
 #endif // _lab_second_H_

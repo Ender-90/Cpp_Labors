@@ -126,3 +126,88 @@ void starDisplay(){
 
     cout<<"\n"<<"Nice stars, don't you think?";
 }
+
+// Exercise no. 6
+//
+// Write an tax calculate app for NaturLand kingdom, where have currency named Twarp.
+// They have following tax thresholds:
+// first 5 000 twarps - 0%;
+// next 10 000 twarps - 10%;
+// next 20 000 twarps - 15%;
+// rest above 35 000 twarps - 20%;
+
+int secondThresh(int * calculateTmp);
+int thirdThresh(int * calculateTmp);
+int fourthThresh(int * calculateTmp);
+
+void taxForNaturLand(){
+
+    int taxpayerTwarps, tax;
+    int *calculateTmp;
+
+    cout<<"\n\n"<<"Hello, dear taxpayer! Welcome to NaturLand Tax Calculator.";
+    cout<<"\n"<<"Please prepare following documents: PIT-11, PIT-16, PIT-37, PIT-63, PIT-89, (...), PIT-897, PIT-965, (...),";
+    cout<<"\n"<<"PIT-92873, PIT-104938,(...), and of course, do not forget about VAT-3,VAT-7,VAT-24, (...), VAT-342)(...)";
+    cout<<"\n\n"<<"(After 4 596 rows of documents...)";
+
+    cout<<"\n\n"<<"Please input your twarp income for last year: ";
+    cin>>taxpayerTwarps;
+
+    *calculateTmp = taxpayerTwarps;
+
+    if (taxpayerTwarps < 0){
+
+        cout<<"What da hell is it? You cheat! An invisible battalion of investigation gnomes has been sent to you!";
+        exit(1);
+    }
+
+    if(taxpayerTwarps <= 5000){
+
+        tax = 0;
+
+    } else if (taxpayerTwarps <= 15000){
+
+        tax = secondThresh(calculateTmp);
+
+    } else if (taxpayerTwarps <= 35000){
+
+        tax = thirdThresh(calculateTmp);
+
+    } else {
+
+        tax = fourthThresh(calculateTmp);
+
+    }
+
+    cout<<"\n\n"<<"The tax you have to pay is: "<<tax<<" twarps + "<<(tax*0.24)<<" twarps for administrative fees.";
+    cout<<"\n"<<"Have a nice day!"<<"\n"<<"wishes from"<<"\n"<<"The Tax Collector Team of NaturLand"<<"\n";
+
+}
+
+int secondThresh(int * calculateTmp){
+
+    *calculateTmp -= 5000;
+
+    return *calculateTmp * 0.1;
+
+}
+int thirdThresh(int * calculateTmp){
+
+    int tmpTax = 0;
+    tmpTax = secondThresh(calculateTmp);
+
+    *calculateTmp -= 10000;
+
+    return tmpTax + (*calculateTmp * 0.15);
+
+}
+int fourthThresh(int * calculateTmp){
+
+    int tmpTax = 0;
+    tmpTax = thirdThresh(calculateTmp);
+
+    *calculateTmp -= 20000;
+
+    return tmpTax + (*calculateTmp * 0.2);
+
+}

@@ -6,19 +6,18 @@ using namespace std;
 
 int main()
 {
+    userNameWelcome();
 
- starDisplay();
+    averageOfSprints();
+    sumBetween();
 
-//    userNameWelcome();
-//
-//    investCheck();
+    triangleArea();
+    circleSquareArea();
+    convertSeconds();
 
-//    averageOfSprints();
-//    sumBetween();
-//
-//    triangleArea();
-//    circleSquareArea();
-//    convertSeconds();
+    investCheck();
+    starDisplay();
+    taxForNaturLand();
 
     return 0;
 }
