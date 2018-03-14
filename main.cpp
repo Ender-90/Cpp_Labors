@@ -21,6 +21,8 @@ int main()
 //    taxForNaturLand();
 //
 //    playWithCandyBars();
+//
+//    pizzaAnalitics();
 
     return 0;
 }
