@@ -6,11 +6,12 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
 
-    userNameWelcome();
+ starDisplay();
 
-    investCheck();
+//    userNameWelcome();
+//
+//    investCheck();
 
 //    averageOfSprints();
 //    sumBetween();

@@ -103,3 +103,26 @@ void investCheck(){
     cout<<"\n\n"<<"After "<<years<<" years Cleo has "<<(round(cleoBalance*100))/100<<" dollars and Dafne has "<<(round(dafneBalance*100))/100<<" dollars.";
     cout<<"\n"<<"Cleo has "<<(round((cleoBalance - dafneBalance)*100))/100<<" dollars more than Dafne.";
 }
+
+// Exercise no. 5
+//
+// Ask user for number of rows to display.
+// Then display rows with the right number of stars (first row - one star, second row - two stars,...)
+
+void starDisplay(){
+
+    int rowNumber;
+    cout<<"\n\n"<<"Welcome to the SIRD - 'Stars In Rows Display!'"<<"\n"<<"Please input number of rows to display: ";
+    cin>>rowNumber;
+
+    cout<<"\n";
+
+    for(int i = 0; i < rowNumber; i++){
+        for(int j = 0; j <= i; j++){
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+
+    cout<<"\n"<<"Nice stars, don't you think?";
+}

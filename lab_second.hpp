@@ -32,5 +32,11 @@ void sumBetween();
 
 void investCheck();
 
+// Exercise no. 5
+//
+// Ask user for number of rows to display.
+// Then display rows with the right number of stars (first row - one star, second row - two stars,...)
+
+void starDisplay();
 
 #endif // _lab_second_H_
