@@ -1,8 +1,6 @@
 #ifndef _lab_first_H_
 #define _lab_first_H_
 
-#include <iostream>
-
 // Exercise no. 1
 //
 // Write a function, which calculate area of triangle.

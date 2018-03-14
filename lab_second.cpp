@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cmath>
 
 using namespace std;
 
@@ -75,4 +76,30 @@ void sumBetween(){
     }
 
     cout<<"\n"<<"Sum of numbers in range ("<<first<<","<<last<<"): "<<sum<<".";
+}
+
+// Exercise no. 4
+//
+// Dafne invests 100 dollars with interest rate of 10% without capitalization.
+// Cleo invests 100 dollars with interest rate of 5% with capitalization.
+// Write an app, which check when Cleo will have more dollars than Dafne,
+// then show years of invest with actual invest balance.
+
+void investCheck(){
+    double dafneBalance = 100, cleoBalance = 100;
+    int years = 0;
+
+    cout<<"\n\n";
+
+    do {
+
+        dafneBalance += (100*0.1);
+        cleoBalance += (cleoBalance*0.05);
+        years++;
+        cout<<"\n"<<"After "<<years<<" years Cleo has "<<(round(cleoBalance*100))/100<<" dollars and Dafne has "<<(round(dafneBalance*100))/100<<" dollars.";
+
+    }while(cleoBalance <= dafneBalance);
+
+    cout<<"\n\n"<<"After "<<years<<" years Cleo has "<<(round(cleoBalance*100))/100<<" dollars and Dafne has "<<(round(dafneBalance*100))/100<<" dollars.";
+    cout<<"\n"<<"Cleo has "<<(round((cleoBalance - dafneBalance)*100))/100<<" dollars more than Dafne.";
 }

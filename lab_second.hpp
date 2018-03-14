@@ -23,5 +23,14 @@ void averageOfSprints();
 
 void sumBetween();
 
-#endif // _lab_second_H_
+// Exercise no. 4
+//
+// Dafne invests 100 dollars with interest rate of 10% without capitalization.
+// Cleo invests 100 dollars with interest rate of 5% with capitalization.
+// Write an app, which check when Cleo will have more dollars than Dafne,
+// then show years of invest with actual invest balance.
 
+void investCheck();
+
+
+#endif // _lab_second_H_

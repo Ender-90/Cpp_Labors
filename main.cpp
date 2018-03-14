@@ -9,12 +9,15 @@ int main()
     cout << "Hello world!" << endl;
 
     userNameWelcome();
-    averageOfSprints();
-    sumBetween();
 
-    triangleArea();
-    circleSquareArea();
-    convertSeconds();
+    investCheck();
+
+//    averageOfSprints();
+//    sumBetween();
+//
+//    triangleArea();
+//    circleSquareArea();
+//    convertSeconds();
 
     return 0;
 }
