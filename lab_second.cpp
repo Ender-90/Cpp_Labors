@@ -12,7 +12,7 @@ void userNameWelcome(){
     string  names, surname;
 
     cout<<"\n\n"<<"What's your names: ";
-    cin>> names;
+    getline(cin, names);
     cout<<"\n"<<"And your suname: ";
     cin>>surname;
 

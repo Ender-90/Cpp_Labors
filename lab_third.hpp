@@ -19,4 +19,16 @@ void playWithCandyBars();
 
 void pizzaAnalitics();
 
+// Exercise no. 3
+//
+// Write a micro database, which contains students and grades in the following subjects:
+// Polish language, maths, Informatics and biology. At the beginning, the database system should
+// ask the user for the number of students, then he should create an array of structures
+// and ask for full details about subsequent students.
+//
+// At the end, the program should answer the questions about the grade in a given subject,
+// giving the student's number, subject number and grade.
+
+void studentClassSimulator();
+
 #endif // _lab_third_H_

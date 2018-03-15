@@ -24,5 +24,7 @@ int main()
 //
 //    pizzaAnalitics();
 
+    studentClassSimulator();
+
     return 0;
 }
