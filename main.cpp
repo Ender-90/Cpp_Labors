@@ -23,8 +23,9 @@ int main()
 //    playWithCandyBars();
 //
 //    pizzaAnalitics();
+//
+//    studentClassSimulator();
 
-    studentClassSimulator();
-
+    guessYodaGame();
     return 0;
 }

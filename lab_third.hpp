@@ -31,4 +31,10 @@ void pizzaAnalitics();
 
 void studentClassSimulator();
 
+// Exercise no. 4
+//
+// Simple guess game. User have to guess a number generate by computer.
+
+void guessYodaGame();
+
 #endif // _lab_third_H_

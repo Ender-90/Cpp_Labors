@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 #include <string>
 
 using namespace std;
@@ -192,5 +193,77 @@ void dataInput(student * dataBase, int numberOfStudents){
         cout<<"\n";
 
     }
+
+}
+
+// Exercise no. 4
+//
+// Simple guess game. User have to guess a number generate by computer.
+
+string randomYodaQuote();
+
+void guessYodaGame(){
+
+    int smallestInRange, largestInRange, guess, mysteryNumber;
+
+    cout<<"\n\n"<<"Younglings, younglings gather 'round.";
+    cout<<"\n"<<"Young padawan, do you play a game with me want to, hmm?";
+    cout<<"\n"<<"Good luck and may the Force be with you!";
+
+    cout<<"\n\n"<<"First, think about the smallest number...  : ";
+    cin>>smallestInRange;
+    cout<<"\n"<<"... and about the largest... : ";
+    cin>>largestInRange;
+
+    srand(time(NULL));
+    mysteryNumber = (rand() % (largestInRange - smallestInRange)) + smallestInRange;
+
+    cout<<"\n"<<"Ready, I am ready.  To guess the number I think about use the Force.  Yeesssssss.";
+
+    cout<<"\n\n"<<"So your answer, what is, hmm?  : ";
+    cin>>guess;
+
+    while(guess != mysteryNumber){
+        if(guess > largestInRange || guess < smallestInRange){
+            cout<<"You will find only what you bring in.";
+          } else if(guess > mysteryNumber){
+                cout<<"\n"<<randomYodaQuote();
+                cout<<"\n"<<"Too much! :";
+          } else {
+                cout<<"\n"<<randomYodaQuote();
+                cout<<"\n"<<"Too less! :";
+          }
+          cin>>guess;
+
+    }
+
+    cout<<"\n\n"<<"Truly wonderful the mind of a child is.";
+    cout<<"\n"<<"May the Force be with you."<<"\n\n";
+}
+
+string randomYodaQuote(){
+
+    string quotes []  = {
+    "Train yourself to let go of everything you fear to lose.",
+    "Fear is the path to the dark side. Fear leads to anger. Anger leads to hate. Hate leads to suffering.",
+    "You can't believe it. That is why you fail.",
+    "PATIENCE YOU MUST HAVE my young padawan.",
+    "Feel the force!",
+    "You must unlearn what you have learned.",
+    "In a dark place we find ourselves, and a little more knowledge lights our way.",
+    "Many of the truths that we cling to depend on our point of view.",
+    "The fear of loss is a path to the Dark Side.",
+    "Do or do not. There is no try.",
+    "Difficult to see. Always in motion is the future..",
+    "Looking? Found someone you have, eh?",
+    "Not if anything to say about it I have!",
+    "Your weapons, you will not need them.",
+    "If no mistake have you made, yet losing you are ... a different game you should play.",
+    "Mine, or I will help you not!",
+    "Who's your Jedi master? WHO'S your Jedi Master?",
+    "Control, control, you must learn control!"
+    };
+
+    return quotes[rand() % 18];
 
 }
