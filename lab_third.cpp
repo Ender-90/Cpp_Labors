@@ -300,3 +300,60 @@ int sumLoop(int n){
     return sum;
 
 }
+
+// Exercise no. 6
+//
+// Sort 20-element array with bubble sort method
+
+void generateArray(int (& intArray)[20]);
+void showArray(int intArray[]);
+void bubbleSort(int (& intArray)[20]);
+
+void bubbleSortArray(){
+
+    int simpleArray[20];
+
+    generateArray(simpleArray);
+    showArray(simpleArray);
+    bubbleSort(simpleArray);
+    showArray(simpleArray);
+
+}
+
+void generateArray(int (& intArray)[20]){
+
+    srand(time(NULL));
+
+    for(int i = 0; i < 20; i++){
+        intArray[i] = rand() % 50;
+    }
+}
+
+void showArray(int intArray[]){
+
+    cout<<"\n\n";
+
+    for (int i = 0; i < 20; i++){
+        cout<<" "<<intArray[i];
+    }
+    cout<<"\n";
+
+}
+
+void bubbleSort(int (& intArray)[20]){
+
+    int sortCounter = 20;
+    int temp;
+
+    do{
+        for(int i = 0; i < (sortCounter - 1); i++){
+            if(intArray[i] > intArray[i+1]){
+                temp = intArray[i];
+                intArray[i] = intArray[i+1];
+                intArray[i+1] = temp;
+            }
+        }
+        sortCounter--;
+    }while(sortCounter > 1);
+
+}

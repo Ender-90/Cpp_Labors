@@ -43,4 +43,10 @@ void guessYodaGame();
 
 void sumOfModSeven();
 
+// Exercise no. 6
+//
+// Sort 20-element array with bubble sort method
+
+void bubbleSortArray();
+
 #endif // _lab_third_H_

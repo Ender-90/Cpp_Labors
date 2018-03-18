@@ -27,8 +27,10 @@ int main()
 //    studentClassSimulator();
 //
 //    guessYodaGame();
+//
+//    sumOfModSeven();
 
-    sumOfModSeven();
+    bubbleSortArray();
 
 
     return 0;
