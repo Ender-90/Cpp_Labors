@@ -267,3 +267,36 @@ string randomYodaQuote(){
     return quotes[rand() % 18];
 
 }
+
+// Exercise no. 5
+//
+// Get 'n' from user, then determine the sum of 'n' numbers divisible by seven.
+
+int sumLoop(int n);
+
+void sumOfModSeven(){
+
+    int n;
+
+    cout<<"\n\n"<<"Hello, user. I can determine the sum of numbers divisible by seven.";
+    cout<<"\n"<<"Tell me, how many subsequent numbers should I add up: ";
+    cin>>n;
+
+    cout<<"\n"<<"Sum of "<<n<<" subsequent numbers divisible by seven is equal to "<<sumLoop(n)<<".";
+    cout<<"\n"<<"Thank you for cooperation, see you next time.";
+}
+
+int sumLoop(int n){
+    int counter = 0;
+    int sum = 0;
+
+    for(int i = 1; counter != n; i++){
+        if(i%7 == 0){
+            sum += i;
+            counter++;
+        }
+    }
+
+    return sum;
+
+}

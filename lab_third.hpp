@@ -37,4 +37,10 @@ void studentClassSimulator();
 
 void guessYodaGame();
 
+// Exercise no. 5
+//
+// Get 'n' from user, then determine the sum of 'n' numbers divisible by seven.
+
+void sumOfModSeven();
+
 #endif // _lab_third_H_

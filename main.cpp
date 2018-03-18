@@ -25,7 +25,11 @@ int main()
 //    pizzaAnalitics();
 //
 //    studentClassSimulator();
+//
+//    guessYodaGame();
 
-    guessYodaGame();
+    sumOfModSeven();
+
+
     return 0;
 }
