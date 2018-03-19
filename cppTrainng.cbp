@@ -36,6 +36,8 @@
 		<Unit filename="lab_first.hpp" />
 		<Unit filename="lab_second.cpp" />
 		<Unit filename="lab_second.hpp" />
+		<Unit filename="lab_third.cpp" />
+		<Unit filename="lab_third.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
