@@ -10,4 +10,13 @@
 
 void displayHarmonicMean();
 
+// Exercise no. 2
+//
+// Write an application with three functions:
+// - fill_array() - user give double precision numbers
+// - show_array()
+// - reverse_array()
+
+void arrayFun();
+
 #endif // LAB_FOURTH_H

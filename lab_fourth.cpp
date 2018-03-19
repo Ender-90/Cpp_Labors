@@ -66,3 +66,73 @@ void quitDisplayHarmonicMean(){
     exit(0);
 
 }
+
+// Exercise no. 2
+//
+// Write an application with three functions:
+// - fill_array() - user give double precision numbers
+// - show_array()
+// - reverse_array()
+
+void fill_array(double * &arr, int &length);
+void show_array(double * arr, int length);
+void reverse_array(double * arr, int length);
+
+void arrayFun(){
+
+    int length;
+    double * arr;
+
+    cout<<"Welcome in Array inverter!";
+
+    fill_array(arr, length);
+    show_array(arr, length);
+    reverse_array(arr, length);
+    show_array(arr, length);
+
+    delete [] arr;
+    arr = 0;
+}
+
+void fill_array(double * &arr, int &length){
+
+    cout<<"\n"<<"Please specify size of array: ";
+    cin>>length;
+
+    if(length < 1){
+        do{
+            cout<<"Length has to be positive number.\nPlease input again: ";
+            cin>>length;
+        }while(length < 1);
+    }
+
+    arr = new double[length];
+
+    for(int i = 0; i < length; i++){
+        cout<<"\n"<<"Input "<<i+1<<" element: ";
+        cin>>arr[i];
+    }
+    cout<<"\n"<<"Array has been filled.";
+}
+
+void show_array(double * arr, int length){
+
+    cout<<"\n"<<"Array:\n";
+
+    for(int i =0; i < length; i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
+void reverse_array(double * arr, int length){
+
+    double tmp;
+
+    for(int i = 0; i < (length/2); i++){
+
+        tmp = arr[i];
+        arr[i] = arr[length - 1 - i];
+        arr[length - 1 - i] = tmp;
+    }
+
+}
