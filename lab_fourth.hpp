@@ -19,4 +19,11 @@ void displayHarmonicMean();
 
 void arrayFun();
 
+// Exercise no. 3
+//
+// Write a function with to integer pointer parameters.
+// Function should return smaller number.
+
+void testingPointers();
+
 #endif // LAB_FOURTH_H

@@ -136,3 +136,24 @@ void reverse_array(double * arr, int length){
     }
 
 }
+
+// Exercise no. 3
+//
+// Write a function with to integer pointer parameters.
+// Function should returns smaller number.
+
+int returnSmaller(int * n, int * m);
+
+void testingPointers(){
+
+    int n = 5;
+    int m = 6;
+
+    cout<<"Simple function with two parameters. It's returns smaller of two integers.";
+
+    cout<<"\n"<<returnSmaller(&n, &m);
+}
+
+int returnSmaller(int * n, int * m){
+    return *n > *m ? *m : *n;
+}

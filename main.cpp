@@ -36,8 +36,10 @@ int main()
 //    multiplicationTable();
 
 //    displayHarmonicMean();
+//
+//    arrayFun();
 
-    arrayFun();
+    testingPointers();
 
     return 0;
 }

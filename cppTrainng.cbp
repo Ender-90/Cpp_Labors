@@ -34,6 +34,8 @@
 		</Compiler>
 		<Unit filename="lab_first.cpp" />
 		<Unit filename="lab_first.hpp" />
+		<Unit filename="lab_fourth.cpp" />
+		<Unit filename="lab_fourth.hpp" />
 		<Unit filename="lab_second.cpp" />
 		<Unit filename="lab_second.hpp" />
 		<Unit filename="lab_third.cpp" />
