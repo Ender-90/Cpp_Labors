@@ -1,5 +1,5 @@
-#ifndef _lab_first_H_
-#define _lab_first_H_
+#ifndef lab_first_H_
+#define lab_first_H_
 
 // Exercise no. 1
 //
@@ -22,4 +22,4 @@ void circleSquareArea();
 
 void convertSeconds();
 
-#endif // _lab_first_H_
+#endif // lab_first_H_

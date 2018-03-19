@@ -1,5 +1,5 @@
-#ifndef _lab_second_H_
-#define _lab_second_H_
+#ifndef lab_second_H_
+#define lab_second_H_
 
 #include <iostream>
 
@@ -50,4 +50,4 @@ void starDisplay();
 
 void taxForNaturLand();
 
-#endif // _lab_second_H_
+#endif // lab_second_H_

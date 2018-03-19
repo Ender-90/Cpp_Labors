@@ -34,5 +34,6 @@ int main()
 
     multiplicationTable();
 
+
     return 0;
 }

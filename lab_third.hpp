@@ -1,5 +1,5 @@
-#ifndef _lab_third_H_
-#define _lab_third_H_
+#ifndef lab_third_H_
+#define lab_third_H_
 
 // Exercise no. 1
 //
@@ -55,4 +55,4 @@ void bubbleSortArray();
 
 void multiplicationTable();
 
-#endif // _lab_third_H_
+#endif // lab_third_H_
