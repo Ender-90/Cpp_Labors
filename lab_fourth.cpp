@@ -75,8 +75,8 @@ void quitDisplayHarmonicMean(){
 // - reverse_array()
 
 void fill_array(double * &arr, int &length);
-void show_array(double * arr, int length);
 void reverse_array(double * arr, int length);
+void show_array(double * arr, int length);
 
 void arrayFun(){
 

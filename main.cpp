@@ -3,6 +3,7 @@
 #include "lab_second.hpp"
 #include "lab_third.hpp"
 #include "lab_fourth.hpp"
+#include "lab_fifth.hpp"
 
 using namespace std;
 
@@ -41,6 +42,8 @@ int main()
 //
 //    testingPointers();
     rewriteThroughPointer();
+
+    findingMaxInArray();
 
     return 0;
 }
