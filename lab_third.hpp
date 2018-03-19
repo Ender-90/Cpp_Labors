@@ -49,4 +49,10 @@ void sumOfModSeven();
 
 void bubbleSortArray();
 
+// Exercise no. 7
+//
+// A nice multiplication table, with elements aligned to the right.
+
+void multiplicationTable();
+
 #endif // _lab_third_H_

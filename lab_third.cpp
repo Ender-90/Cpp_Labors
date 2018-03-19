@@ -357,3 +357,29 @@ void bubbleSort(int (& intArray)[20]){
     }while(sortCounter > 1);
 
 }
+
+// Exercise no. 7
+//
+// A nice multiplication table, with elements aligned to the right.
+
+void multiplicationTable(){
+
+    int multiTmp;
+
+    cout<<"\n\n"<<"Multiplication table: "<<"\n\n";
+
+    for (int i = 1; i < 11; i ++){
+        for(int j = 1; j < 11; j++){
+            multiTmp = i * j;
+            if(multiTmp < 10){
+                cout<<"   "<<multiTmp;
+            } else if(multiTmp>99){
+                cout<<" "<<multiTmp;
+            } else {
+                cout<<"  "<<multiTmp;
+            }
+        }
+        cout<<"\n";
+    }
+
+}

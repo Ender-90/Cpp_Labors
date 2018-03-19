@@ -32,6 +32,7 @@ int main()
 
     bubbleSortArray();
 
+    multiplicationTable();
 
     return 0;
 }
