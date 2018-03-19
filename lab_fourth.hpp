@@ -26,4 +26,10 @@ void arrayFun();
 
 void testingPointers();
 
+// Exercise no. 6
+//
+// Rewrite value of integer variable to the other variable through pointer.
+
+void rewriteThroughPointer();
+
 #endif // LAB_FOURTH_H

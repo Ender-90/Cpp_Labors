@@ -38,8 +38,9 @@ int main()
 //    displayHarmonicMean();
 //
 //    arrayFun();
-
-    testingPointers();
+//
+//    testingPointers();
+    rewriteThroughPointer();
 
     return 0;
 }

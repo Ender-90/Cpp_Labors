@@ -149,11 +149,34 @@ void testingPointers(){
     int n = 5;
     int m = 6;
 
-    cout<<"Simple function with two parameters. It's returns smaller of two integers.";
+    cout<<"\n\n"<<"Simple function with two parameters. It's returns smaller of two integers.";
 
     cout<<"\n"<<returnSmaller(&n, &m);
 }
 
 int returnSmaller(int * n, int * m){
     return *n > *m ? *m : *n;
+}
+
+// Exercise no. 6
+//
+// Rewrite value of integer variable to the other variable through pointer.
+
+void rewrite(int n, int * ptr);
+
+void rewriteThroughPointer(){
+
+    cout<<"\n"<<"Rewrite value between variables through pointer.";
+
+    int n = 4;
+    int * ptr = new int;
+    *ptr = 928;
+
+    cout<<"\n"<<"First variable: "<<n<<". Second variable : "<<* ptr;
+    rewrite(n, ptr);
+    cout<<"\n"<<"First variable: "<<n<<". Second variable after rewriting: "<<* ptr;
+}
+
+void rewrite(int n, int * ptr){
+    *ptr = n;
 }
