@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="lab_fifth.cpp" />
+		<Unit filename="lab_fifth.hpp" />
 		<Unit filename="lab_first.cpp" />
 		<Unit filename="lab_first.hpp" />
 		<Unit filename="lab_fourth.cpp" />
@@ -41,6 +43,8 @@
 		<Unit filename="lab_third.cpp" />
 		<Unit filename="lab_third.hpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="simpleArrayModule.cpp" />
+		<Unit filename="simpleArrayModule.hpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
