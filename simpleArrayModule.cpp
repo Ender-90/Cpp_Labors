@@ -5,6 +5,27 @@
 
 using namespace std;
 
+// Inline function for define random generator seed and engine
+
+inline void seedAndGenerator(){
+
+    unsigned seed = chrono::system_clock::now().time_since_epoch().count();
+    mt19937 randomEngine(seed);
+
+}
+
+// Inline function for handle input errors
+
+void checkInput(int wrongInput){
+
+    while(!cin){
+        cin.clear();
+        cin.ignore();
+        cout<<"Wrong input. Please try again: ";
+        cin>>wrongInput;
+    }
+}
+
 //////////////////////
 //                  //
 //  Integer arrays. //
@@ -20,6 +41,7 @@ void createIntArray(int * &intArray, int &length){
         do{
             cout<<"Length has to be positive number.\nPlease input again: ";
             cin>>length;
+            checkInput(length);
         }while(length < 1);
     }
 
@@ -34,8 +56,7 @@ void createIntArray(int * &intArray, int &length){
 
 void generateIntArray(int * &intArray, int length){
 
-    unsigned seed = chrono::system_clock::now().time_since_epoch().count();
-    mt19937 randomEngine(seed);
+    seedAndGenerator();
     uniform_int_distribution<int> unifInt(0, 100);
 
     for(int i = 0; i < length; i++){
@@ -45,19 +66,13 @@ void generateIntArray(int * &intArray, int length){
 
 void generateIntArray(int * &intArray, int length, int &maxValue){
 
-    unsigned seed = chrono::system_clock::now().time_since_epoch().count();
-    mt19937 randomEngine(seed);
+    seedAndGenerator();
 
     if(maxValue < 1){
         do{
             cout<<"Maximum value of generated number should be more than 0: ";
             cin>>maxValue;
-            while(!cin){
-                cin.clear();
-                cin.ignore();
-                cout<<"Wrong input. Please try again: ";
-                cin>>maxValue;
-            }
+            checkInput(maxValue);
         }while(maxValue < 1);
     }
 
@@ -70,28 +85,17 @@ void generateIntArray(int * &intArray, int length, int &maxValue){
 
 void generateIntArray(int * &intArray, int length, int &minValue, int &maxValue){
 
-    unsigned seed = chrono::system_clock::now().time_since_epoch().count();
-    mt19937 randomEngine(seed);
+    seedAndGenerator();
 
     if(maxValue <= minValue){
         do{
             cout<<"Maximum value should be greater than minimum.\nPlease input minimum value: ";
             cin>>minValue;
-            while(!cin){
-                cin.clear();
-                cin.ignore();
-                cout<<"Wrong input. Please try again: ";
-                cin>>minValue;
-            }
+            checkInput(minValue);
             cout<<"Please input maximum value: ";
             cin>>maxValue;
-            while(!cin){
-                cin.clear();
-                cin.ignore();
-                cout<<"Wrong input. Please try again: ";
-                cin>>maxValue;
-            }
-        }while(maxValue <=minValue);
+            checkInput(maxValue);
+        }while(maxValue <= minValue);
 
     uniform_int_distribution<int> unifInt(minValue, maxValue);
 
@@ -107,6 +111,7 @@ void inputIntArray(int * &intArray, int length, string welcomeMessage){
     for(int i = 0; i < length; i++){
         cout<<"Please input next value: ";
         cin>>intArray[i];
+        checkInput(intArray[i]);
     }
 }
 
